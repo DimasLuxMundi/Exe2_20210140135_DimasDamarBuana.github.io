@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kuesioner.css">
+    <title>Kuesioner</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Kuesioner</h3>
+      </div>
+      <form action id="ks-form">
+        <label for="nama">Nama</label><br>
+        <input type="text" placeholder="Nama anda" id="nama"><br><br>
+
+        <label for="birthdaytime">Tanggal Lahir:</label><br>
+        <input type="date" id="birthdaytime"
+          name="birthdaytime"><br><br>
+        <p>
+          Band / Musisi ini mana yang paling anda sukai ? (Pilih 1) :
+          <select id="band">
+            <option>Radiohead</option>
+            <option>David Bowie</option>
+            <option>Nirvana</option>
+          </select>
+        </p><br>
+
+        <p>Apakah anda sering pernah mendengar lagu yang ber-genre yang serupa dengan lagu ini? :</p>
+
+        <input type="radio" name="musik" 
+          value="sangatsering">
+        <label for="musik">Sangat Sering</label><br>
+        <input type="radio" name="musik" value="sering">
+        <label for="musik">Sering</label><br>
+        <input type="radio" name="musik" 
+          value="jarang">
+        <label for="musik">Jarang</label><br>
+        <input type="radio" name="musik" value="tdkpernah">
+        <label for="musik">Tidak Pernah</label><br>
+
+        <label for>Alamat</label><br>
+        <textarea name="alamat" id="alamat"
+          placeholder="Tulis alamat mu disini" cols="30" rows="10"></textarea><br>
+
+        <label for>Masukkan komentar anda tentang lagu ini</label><br>
+        <textarea name="komentar" id="komentar"
+          placeholder="Tulis komentar mu disini" cols="30" rows="10"></textarea><br>
+          
+
+        <button type="submit" onclick="kirimData()">Kirim</button><br><br>
+        
+        <a href="index.html" class="back-button">Back</a>
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
